@@ -7,6 +7,7 @@
 //
 
 #import "MainTableViewController.h"
+#import "SignUpViewController.h"
 
 @interface MainTableViewController ()
 
@@ -64,6 +65,15 @@
         contactsCell.textLabel.text = @"Contacts";
         
         return contactsCell;
+    }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"SignUpSegue"])
+    {
+        UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"", backbuttontitle) style:UIBarButtonItemStylePlain target:nil action:nil];
+        self.navigationItem.backBarButtonItem = backButton;
     }
 }
 

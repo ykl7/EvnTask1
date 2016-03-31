@@ -24,7 +24,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="x02-pU-WIZ" kind="show" id="lZ9-rY-Zha"/>
+                                    <segue destination="x02-pU-WIZ" kind="show" identifier="SignUpSegue" id="lZ9-rY-Zha"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ContactsCell" id="fd0-sW-86c">
